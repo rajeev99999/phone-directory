@@ -37,21 +37,6 @@
   }
 } */
 
-.component-body-container{
-  padding: 20px;
-}
-
-.custom-btn {
-  padding: 10px;
-  border: none;
-  margin-right: 10px;
-  text-transform: uppercase;
-  width: 80px;
-  text-align: center;
-  font-size: 1.2rem;
-  cursor: pointer;
-  outline: none;
-}
 
 .add-btn {
   background: #7ab97a;
