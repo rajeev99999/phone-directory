@@ -6,15 +6,39 @@ import Header from './Header';
 class  App extends Component {
 
   render(){
+    let subscribers=[
+      {
+        id:1,
+        name:"Shilpa Bhat",
+        phone:9999999999
+      },
+      {
+        id:2,
+        name:"Srishti Gupta",
+        phone:88888888888
+      }
+    ]
   return (
     <div className="App">
       <Header/>
-      <div>
-        <button>Add</button>
-        <div>
-          <span>Name:</span>
-          <span>Phone No:</span>
+      
+      <div className="component-body-container">
+        <div className="custom-btn add-btn">Add</div>
+        <div className="grid-container heading-container">
+          <span className="grid-tem name-heading">Name</span>
+          <span className="grid-item phone-heading">Phone</span>
         </div>
+
+        {
+          subscribers.map(sub =>{
+            return <div key={sub.id} className="grid-container">
+              <span className="grid-item">{sub.name}</span>
+              <span className="grid-item">{sub.phone}</span>
+              </div>
+          }
+            )
+        }
+
       </div>
       
     </div>
